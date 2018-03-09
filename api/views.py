@@ -17,6 +17,7 @@ def register(request):
 
 	if request.method == 'POST':
 		try:
+			print ("Hey")
 			reqdata = json.loads(request.body.decode("utf-8"))
 			user = User(username = reqdata["email"])
 			user.set_password(reqdata["password"])

@@ -11,7 +11,6 @@ https://docs.djangoproject.com/en/1.10/ref/settings/
 """
 
 import os
-import dj_database_url
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -24,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '5^kqj82*+sah#2)i0-(t-e8r-tiyrl5yz0a-i9#sjiz-*9b67j'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', '.herokuapp.com']
+ALLOWED_HOSTS = ['*']
 
 
 
@@ -76,18 +75,10 @@ WSGI_APPLICATION = 'augmentboi.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.10/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',	# DO NOT MODIFY ENGINE
-        'NAME': 'augmentboidb',	# DATABASE NAME
-        'USER': 'postgres',	# USERNAME
-        'PASSWORD': 'postgres',	# PASSWORD
-        'HOST': 'localhost',	# HOST
-        'PORT': '5432',		# PORT
-    }
-}
+import dj_database_url
 
-
+DATABASES = {}
+DATABASES['default'] = dj_database_url.config(conn_max_age=600)
 
 # Password validation
 # https://docs.djangoproject.com/en/1.10/ref/settings/#auth-password-validators
