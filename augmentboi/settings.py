@@ -75,10 +75,16 @@ WSGI_APPLICATION = 'augmentboi.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.10/ref/settings/#databases
 
-import dj_database_url
-
-DATABASES = {}
-DATABASES['default'] = dj_database_url.config(conn_max_age=600)
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',	# DO NOT MODIFY ENGINE
+        'NAME': 'postgres',	# DATABASE NAME
+        'USER': 'postgres',	# USERNAME
+        'PASSWORD': 'postgres',	# PASSWORD
+        'HOST': 'localhost',	# HOST
+        'PORT': '5432',		# PORT
+    }
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/1.10/ref/settings/#auth-password-validators
