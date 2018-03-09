@@ -24,9 +24,3 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'', include('api.urls')),
 ]
-if not settings.DEBUG:
-    urlpatterns +=[
-        url('', r'^static/(?P<path>.*)$'),
-        url('', 'django.views.static.serve'),
-        url('', {'document_root': settings.STATIC_ROOT}),
-    ]
