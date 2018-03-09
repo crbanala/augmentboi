@@ -14,9 +14,19 @@ Including another URLconf
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
 from django.conf.urls import url, include
+
+import settings
+from django.conf.urls import *
 from django.contrib import admin
+admin.autodiscover()
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^augmentboi/', include('api.urls')),
+    url(r'', include('api.urls')),
 ]
+if not settings.DEBUG:
+    urlpatterns +=[
+        url('', r'^static/(?P<path>.*)$'),
+        url('', 'django.views.static.serve'),
+        url('', {'document_root': settings.STATIC_ROOT}),
+    ]
