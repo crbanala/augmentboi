@@ -11,7 +11,6 @@ from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.models import User
 
 from .models import Customer
-from dbHandler import pgExecQuery,pgExecUpdate
 # Create your views here.
 @csrf_exempt
 def register(request):

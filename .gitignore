@@ -3,4 +3,3 @@ db.sqlite3
 django-proj
 __pycache__
 local_settings.py
-
