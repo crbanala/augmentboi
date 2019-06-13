@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 # augmentboi
 Django Server For Mobile Computing Project<br>
 <br>
@@ -49,4 +47,3 @@ Things to do -<br>
 <br>■ {key:key, latitude:lat, longitude:long}
 <br>– Response: application/json
 <br>■ {statuscode:N, nResults:N,results:[{lat:LAT, long:LONG} {lat:LAT, long:LONG} {lat:LAT, long:LONG}]
->>>>>>> 9db11f7637751131b55692c78dd7bc86262db09e
