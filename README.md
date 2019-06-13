@@ -1,9 +1,9 @@
 # Mobile Computing Project AUGMENTBOI
-This is a Backend Server written using django framework and is hosted in AWS.
+This is a Backend Server written using django framework for an Academic Project and is hosted in AWS.
 The Server Supports the following API's.<br>
 <br>
-<br>WEB APIs
-<br>■ AR Target:
+## WEB APIs:
+<br><b>AR Target:</b>
 <br>– POST /targets/ application/json : pushes ar target image
 <br>– Body:
 <br>– {
@@ -17,30 +17,44 @@ The Server Supports the following API's.<br>
 <br>– "appKey": "test_app_key",
 <br>– "signature": "sha1 signature"
 <br>– }
-<br>WEB APIs
-<br>■ AR target delete
+
+
+
+<br><b> AR target delete </b>
 <br>– POST /target/<targetid> application/json
-<br>■ DELETE /target/e61db301-e80f-4025-b822-
-<br>9a00eb48d8d2?date=xxx&appKey=xxx&signature=xxx
-<br>■ HTTP/1.1
-<br>WEB APIs
-<br>■ Login
+
+
+
+<br><b>DELETE /target/e61db301-e80f-4025-b822-9a00eb48d8d2?date=xxx&appKey=xxx&signature=xxx </b>
+
+
+
+<br><b>Login</b>
 <br>– POST application/json
-<br>■ {email:email, password:password}
+<br>{email:email, password:password}
 <br>– Response: application/json
-<br>■ {statuscode:N, key:key}
-<br>■ Register
+<br>{statuscode:N, key:key}
+
+
+
+<br><b>Register</b>
 <br>– POST application/json
-<br>■ {email:email, password:password}
+<br>{email:email, password:password}
 <br>– Response: application/json
-<br>■ {statuscode:N}
-<br>■ Content upload
+<br>{statuscode:N}
+
+
+
+<br><b>Content upload</b>
 <br>– POST application/json
-<br>■ {content:Base64encodedData, key:key, latitude:lat, longitude:long}
+<br>{content:Base64encodedData, key:key, latitude:lat, longitude:long}
 <br>– Response: application/json
-<br>■ {statuscode:N}
-<br>■ Marker download
+<br>{statuscode:N}
+
+
+
+<br><b>Marker download</b>
 <br>– GET application/json
-<br>■ {key:key, latitude:lat, longitude:long}
+<br>{key:key, latitude:lat, longitude:long}
 <br>– Response: application/json
-<br>■ {statuscode:N, nResults:N,results:[{lat:LAT, long:LONG} {lat:LAT, long:LONG} {lat:LAT, long:LONG}]
+<br>{statuscode:N, nResults:N,results:[{lat:LAT, long:LONG} {lat:LAT, long:LONG} {lat:LAT, long:LONG}]
