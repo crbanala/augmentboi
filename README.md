@@ -1,10 +1,7 @@
-# augmentboi
-Django Server For Mobile Computing Project<br>
+# Mobile Computing Project AUGMENTBOI
+This is a Backend Server written using django framework and is hosted in AWS.
+The Server Supports the following API's.<br>
 <br>
-Things to do -<br>
-<br>1.Deploy on Heroku
-<br>2.Complete The Whole APIS needed
-<br>3.Check the Django File Field and Amazon S3 things
 <br>WEB APIs
 <br>■ AR Target:
 <br>– POST /targets/ application/json : pushes ar target image
