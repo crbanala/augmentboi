@@ -1,4 +1,15 @@
 # Mobile Computing Project AUGMENTBOI
+
+
+
+
+
+Complete Report of the project and Source code is available at :
+https://docs.google.com/document/d/1vlO7C8cqrCSmC2uLf_hQMFa4qreUgmrDTzoc8cn7AuQ/edit?usp=sharing
+
+
+
+
 This is a Backend Server written using django framework for an Academic Project and is hosted in AWS.
 The Server Supports the following API's.<br>
 <br>
