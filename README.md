@@ -36,7 +36,6 @@ The Server Supports the following API's.<br>
 <br>{statuscode:N, key:key}
 
 
-
 <br><b>Register</b>
 <br>– POST application/json
 <br>{email:email, password:password}
@@ -58,3 +57,6 @@ The Server Supports the following API's.<br>
 <br>{key:key, latitude:lat, longitude:long}
 <br>– Response: application/json
 <br>{statuscode:N, nResults:N,results:[{lat:LAT, long:LONG} {lat:LAT, long:LONG} {lat:LAT, long:LONG}]
+  
+
+## App Usage
